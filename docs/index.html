@@ -4,7 +4,38 @@
     <title>samcf.me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Sam Ferrell" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <style>
+      body {
+        font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+        font-size: 16px;
+        margin: 24px;
+      }
+
+      header {
+        border-bottom: 1px solid black;
+        max-width: 640px;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-position: inside;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ol {
+        list-style-position: inside;
+        list-style-type: none;
+        margin: 16px 0 0 0;
+        padding: 0;
+      }
+
+      li {
+        margin-right: 16px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -19,10 +50,14 @@
     <main>
       <ol>
         <li>
+          <time datetime="2026-12-22">Jun 2026</time>
+          <a href="/post/secret-fire.html">Secret Fire</a>
+        </li>
+        <li>
           <time datetime="2026-12-22">May 2026</time>
-          <a href="/post/finding-dependencies-pull-queries-datascript.html">
-            Finding Dependencies of Pull-style Queries in DataScript
-          </a>
+          <a href="/post/pull-query-dependencies.html"
+            >Finding Dependencies of Pull-style Queries in DataScript</a
+          >
         </li>
       </ol>
     </main>
