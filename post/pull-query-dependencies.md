@@ -1,4 +1,8 @@
-# Finding Dependencies of Pull-style Queries in DataScript
+% Finding Dependencies of Pull Queries in DataScript
+% Sam Ferrell
+% May 22, 2026
+
+# Finding Dependencies of Pull Queries in DataScript
 
 Pull queries declaratively describe which entity data should be retrieved. Sometimes you might like to avoid rerunning a query if its result could not possibly have changed. One way to figure that out is to derive a set of entity ID / attribute pairs. When you receive a transaction report with datoms found in that set, the query should be run again and its dependencies recomputed.
 

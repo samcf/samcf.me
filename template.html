@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>samcf.me</title>
+    <title>$title$</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Sam Ferrell" />
     <link rel="stylesheet" href="/normalize.css" />
@@ -22,12 +22,40 @@
           font-weight: normal;
         }
 
+        hr {
+          align-items: center;
+          border-color: rgb(225, 225, 225);
+          border-style: solid;
+          border-width: 1px 0 0 0;
+          color: rgb(200, 200, 200);
+          display: flex;
+          justify-content: center;
+          margin: 32px;
+          text-align: center;
+
+          &::after {
+            background-color: white;
+            content: "§";
+            padding: 0 16px;
+          }
+        }
+
         pre {
           overflow-x: hidden;
         }
 
         code {
           font-size: 12px;
+        }
+
+        ul,
+        ol {
+          list-style-position: inside;
+        }
+
+        :scope > ul,
+        :scope > ol {
+          padding-left: 0;
         }
       }
     </style>
