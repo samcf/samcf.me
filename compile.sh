@@ -11,7 +11,7 @@ for src in post/*.md; do
 
     printf '%s -> %s\n' "$src" "$dst"
     pandoc "$src"                \
-      --syntax-highlighting=none \
+      --syntax-highlighting none \
       --template template.html   \
       --output "$dst"
 done

@@ -1,0 +1,51 @@
+body {
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+  font-size: 16px;
+  margin: 24px;
+}
+
+main {
+  max-width: 640px;
+}
+
+@scope (article) {
+  h1 {
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  hr {
+    align-items: center;
+    border-color: rgb(225, 225, 225);
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    color: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    margin: 32px;
+    text-align: center;
+    &::after {
+      background-color: white;
+      content: "§";
+      padding: 0 16px;
+    }
+  }
+
+  pre {
+    overflow-x: hidden;
+  }
+
+  code {
+    font-size: 12px;
+  }
+
+  ul,
+  ol {
+    list-style-position: inside;
+  }
+
+  :scope > ul,
+  :scope > ol {
+    padding-left: 0;
+  }
+}
